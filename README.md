@@ -1,4 +1,4 @@
-# Webpack - How the Dependency Graph works
+# Webpack
 
 
 Webpack is a Module bundler. It bundles a bunch of modules with require statements
@@ -14,7 +14,7 @@ like images, and decide how they're processed in your final Javascript bundle, l
 with a URL pointing to a CDN.
 
 
-# When to use  Webpack
+## When to use  Webpack
 
 If you're building a complex Front End application with many non-code static assets
  such as CSS, images, fonts, etc, then yes, Webpack will give you great benefits.
@@ -23,7 +23,7 @@ If your application is fairly small, and you don't have many static assets and y
 build one Javascript file to serve to the client, then Webpack might be more overhead than you need.
 
 
-## The Dependency Graph property
+## The Dependency Graph property - How it works!
 Webpack gives us a dependency graph. It lets you use require() on local "static assets," meaning non-code files.
 
 When you run Webpack, it searches through all of your code for require() calls. It compares the path string for example "../../assets/logo.png" to the "loader" configuration you specify.
